@@ -10,12 +10,20 @@ const subObj = mongoose.Schema({
       // State:{type:String,required:true},
       // Address:{type:String,required:true},
       name: { type: String, required:true}, //required: true },
-	qnt: {type: Number, required:true}, //required: true},
-      price: { type: Number, required:true},
+	qnt: {type: String, required:true}, //required: true},
+      price: { type: String, required:true},
       imgurl:{type: String},
-       grandtotal:{type:Number,required:true},
-       Totalprice:{type:Number,required:true},
-      prodId:{type:String,required:true}
+      //  grandtotal:{type:Number,required:true},
+      //  Totalprice:{type:Number,required:true},
+      prodId:{type:String,required:true},
+      size:{type:String,required:true},
+      date:{type:String,required:true},
+      quality:{type:String,required:true},
+      region:{type:String,required:true},
+      description:{type:String,required:true},
+      thick:{type:String,required:true},
+      OrderStatus:{type:String,required:true,default:'Placed'},
+      ApproximateTime:{type:String,required:true,default:'Arriving Within 1 Week'}
 	//required: true }
        })
 
